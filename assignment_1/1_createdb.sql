@@ -9,9 +9,9 @@ use StatisticsTest
 go
 
 -- Create a Numbers table
-create table Numbers(n int not null primary key);
+create table Numbers_b3z8(n int not null primary key);
 go
-insert Numbers(n)
+insert Numbers_b3z8(n)
      select rn from (select row_number()
                             over(order by current_timestamp) as rn
                       from sys.trace_event_bindings as b1
