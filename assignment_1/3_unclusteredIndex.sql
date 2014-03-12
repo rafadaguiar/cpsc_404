@@ -11,9 +11,12 @@ c. In general, what are the kinds of column(s) on which to consider building a
 	and that are unique or contain many distinct values.
 	
 4)
-ii)
-"For the first query, which will return 100000 rows, the optimizer chooses a Table Scan. #result_rows[estimated==actual] 
+a.
+ii.
+ For the first query, which will return 100000 rows, the optimizer chooses a Table Scan. #result_rows[estimated==actual] 
  The second query yields only one single row, so in this case, an Index Seek is very efficient. #result_rows[estimated == actual]
- The third query yiedls no result. An index seek was performed. #result_rows[estimated != actual]" 
+ The third query yiedls no result. An index seek was performed. #result_rows[estimated != actual] 
+b. Table Scan: Scan all the entries in the table
+   Index Scan: Scan all the entries in the index
 
 */

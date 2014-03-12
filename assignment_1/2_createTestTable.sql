@@ -4,7 +4,7 @@ go
 if (object_id('T0_b3z8', 'U') is not null)
   drop table T0_b3z8;
 go
-create table T0(c1 int not null, c2 nchar(200) not null default '#')
+create table T0_b3z8(c1 int not null, c2 nchar(200) not null default '#')
 go
 -- Insert 100000 rows. All rows contain the value 1000 for column c1
 insert T0_b3z8(c1)
